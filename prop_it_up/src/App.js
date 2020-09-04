@@ -11,7 +11,8 @@ function App() { // v~~ Replace default text below
         lastName = {"Doe"}
         age = {45}
         hairColor = {"Black"}
-      /> {/* <~~ Use component like html tag with self-closing tag */}
+      />
+      {/* <button onClick={ ()=> alert("This button has been clicked!") }>Click Me</button> */}
         
         <PersonCard
           firstName = {"John"}
