@@ -1,9 +1,39 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+import PersonCard from './components/PersonCard'; // <~~ import component to use
+
+function App() { // v~~ Replace default text below
   return (
-  <h1>Hello.</h1>
+    <div className="App">
+      <PersonCard
+        firstName = {"Jane"}
+        lastName = {"Doe"}
+        age = {45}
+        hairColor = {"Black"}
+      /> {/* <~~ Use component like html tag with self-closing tag */}
+        
+        <PersonCard
+          firstName = {"John"}
+          lastName = {"Smith"}
+          age = {88}
+          hairColor = {"Brown"}
+        /> 
+
+        <PersonCard
+          firstName = {"Millard"}
+          lastName = {"Fillmore"}
+          age = {50}
+          hairColor = {"Brown"}
+        /> 
+
+        <PersonCard
+          firstName = {"Maria"}
+          lastName = {"Smith"}
+          age = {62}
+          hairColor = {"Brown"}
+        /> 
+    </div>
   );
 }
 
