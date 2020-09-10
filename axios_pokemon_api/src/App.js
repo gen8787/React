@@ -20,10 +20,14 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Axios Pokemon API</h1>
+      <hr/>
       <button onClick={showPoke}>Fetch Pokemon</button>
+
       {success ? poke.map((poke, idx) => {
         return <li key={idx}>{poke.name}</li>
-      }) : ''}
+      }) : ""}
+
       </div>
   );
 }
