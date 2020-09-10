@@ -5,16 +5,16 @@ import TodoDisplay from './components/TodoDisplay';
 
 function App() {
 
-  const [allToDos, setAllToDos] = useState([]);
+  const [allTodos, setAllTodos] = useState([]);
 
   return (
     <div className="App">
       <h1>Todo List</h1>
       <hr/>
-      <TodoComponent allToDos={allToDos} setAllToDos={setAllToDos}/>
+      <TodoComponent allTodos={allTodos} setAllTodos={setAllTodos}/>
       {
-        allToDos.map((todo, idx) =>
-          <TodoDisplay todo={todo} allToDos={allToDos} setAllToDos={setAllToDos} index={idx} key={idx}/>
+        allTodos.map((todo, idx) =>
+          <TodoDisplay todo={todo} allTodos={allTodos} setAllTodos={setAllTodos} index={idx} key={idx}/>
         )
       }
     </div>

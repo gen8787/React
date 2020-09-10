@@ -1,17 +1,17 @@
 import React from 'react';
 
 const TodoDisplay = (props) => {
-    const { todo, allToDos, setAllToDos, index } = props;
+    const { todo, allTodos, setAllTodos, index } = props;
 
     const deleteItem = () => {
-        setAllToDos(() => {
-            return allToDos.filter(todo => allToDos.indexOf(todo) !== index);
+        setAllTodos(() => {
+            return allTodos.filter(todo => allTodos.indexOf(todo) !== index);
         });
     };
 
     const checkHandler = () => {
-        allToDos[index].isComplete = !allToDos[index].isComplete;
-        setAllToDos([...allToDos]);
+        allTodos[index].isComplete = !allTodos[index].isComplete;
+        setAllTodos([...allTodos]);
     };
 
     return (

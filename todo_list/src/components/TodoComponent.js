@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TodoComponent = (props) => {
-    const {allToDos, setAllToDos} = props;
+    const {allTodos, setAllTodos} = props;
     let todo = {
         name: "",
         isComplete: false
@@ -12,7 +12,7 @@ const TodoComponent = (props) => {
     }
 
     const onClickHandler = e => {
-        setAllToDos([...allToDos, todo]);
+        setAllTodos([...allTodos, todo]);
         e.target.value = "";
     }
 
