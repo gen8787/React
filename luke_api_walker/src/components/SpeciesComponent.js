@@ -15,8 +15,8 @@ const SpeciesComponent = props => {
             <h1>{species.name}</h1>
             <p>Classification: {species.classification}</p>
             <p>Designation: {species.designation}</p>
-            <p>Skin Colors: {species.skin_colors}</p>
-            <p>Average Lifespan: {species.average_lifespan}</p>
+            <p>Average Lifespan: {species.average_lifespan} years</p>
+            <p>Language: {species.language}</p>
         </>
     )
 }

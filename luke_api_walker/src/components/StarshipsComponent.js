@@ -14,8 +14,8 @@ const StarshipsComponent = props => {
         <>
             <h1>{starship.name}</h1>
             <p>Model: {starship.model}</p>
-            <p>Crew: {starship.crew} individuals</p>
             <p>Class: {starship.starship_class}</p>
+            <p>Length: {starship.length} meters</p>
             <p>Max Speed: {starship.max_atmosphering_speed}</p>
         </>
     )

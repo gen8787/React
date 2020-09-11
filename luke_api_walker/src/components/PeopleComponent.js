@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 
@@ -16,8 +15,8 @@ const PeopleComponent = props => {
             <h1>{person.name}</h1>
             <p>Height: {person.height} cm</p>
             <p>Mass: {person.mass} kg</p>
-            <p>Eye Color: {person.eye_color}</p>
-            <p>Gender: {person.gender}</p>
+            <p>Hair Color: {person.hair_color}</p>
+            <p>Skin Color: {person.skin_color}</p>
         </>
     )
 }

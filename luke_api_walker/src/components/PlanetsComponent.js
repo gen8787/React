@@ -13,10 +13,10 @@ const PlanetsComponent = props => {
     return (
         <>
             <h1>{planet.name}</h1>
-            <p>Diameter: {planet.diameter} km</p>
             <p>Climate: {planet.climate}</p>
             <p>Terrain: {planet.terrain}</p>
-            <p>Population: {planet.population} individuals</p>
+            <p>Surface Water: {planet.surface_water > 0 ? "true" : "false"}</p>
+            <p>Population: {planet.population}</p>
         </>
     )
 }
